@@ -34,7 +34,6 @@ To Trunk Switch port(Trunk switchs for accessing each other) instead of access j
 
 ```
 switch port mode trunk
-
 ```
 After separting devices to different VLANs, save data permanently to non-volatile memory with this command:
 ```
