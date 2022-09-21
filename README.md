@@ -39,3 +39,5 @@ After separting devices to different VLANs, save data permanently to non-volatil
 ```
 do write memory
 ```
+
+## Router Setup 
