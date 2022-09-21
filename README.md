@@ -40,17 +40,26 @@ After separting devices to different VLANs, save data permanently to non-volatil
 do write memory
 ```
 
-## Configuring Gigabit Ethernet LAN Interfaces
+## Router CLI command Format for assigning IP address:
 
 ```
 enable
 configure terminal
 
-interface gigabitethernet 0/0
-ip address 192.168.0.10 255.255.255.0
-
+interface gigabitEthernet 0/1
+ip address [gateway address] [subnet mask]
+ip address 192.168.10.21 255.255.255.255
 no shutdown
 exit
-
 do write memory
 ```
+## Router CLI command Format for static routing
+
+```
+enable
+configure terminal
+ip route [destination network address] [subnet mask] [via ip]
+ip route 192.168.50.0 255.255.255.0 192.168.90.91
+```
+
+
