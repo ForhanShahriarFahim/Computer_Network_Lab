@@ -40,4 +40,17 @@ After separting devices to different VLANs, save data permanently to non-volatil
 do write memory
 ```
 
-## Router Setup 
+## Configuring Gigabit Ethernet LAN Interfaces
+
+```
+enable
+configure terminal
+
+interface gigabitethernet 0/0
+ip address 192.168.0.10 255.255.255.0
+
+no shutdown
+exit
+
+do write memory
+```
